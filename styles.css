@@ -1,0 +1,225 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Путь к изображению фона */
+    background-size: cover; /* Масштабировать изображение по размеру окна */
+    background-position: center; /* Центрировать изображение */
+    background-repeat: no-repeat; /* Не повторять изображение */
+}
+
+header {
+    background: #6A5ACD; /* Фиолетовый цвет шапки */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    padding: 20px;
+}
+
+.info-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about {
+    background: linear-gradient(to right, #E0BBE4, #D2B4DE); /* Градиент для блока "О нас" */
+    color: white;
+}
+
+.offers {
+    background: linear-gradient(to right, #B19CD9, #6A5ACD); /* Градиент для блока "Предложения" */
+    color: white;
+}
+
+.feedback {
+    background: linear-gradient(to right, #A7C6ED, #6A5ACD); /* Градиент для блока "Отзывы" */
+    color: white;
+}
+
+.contacts {
+    background: linear-gradient(to right, #E0BBE4, #D2B4DE); /* Градиент для блока "Контакты" */
+    color: white;
+}
+
+.offer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.offer-card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(30% - 20px);
+    transition: background 0.3s;
+}
+
+.offer-card-1 {
+    background: linear-gradient(to right, #BA68C8, #8E24AA); /* Градиент для первой карточки */
+}
+
+.offer-card-2 {
+    background: linear-gradient(to right, #AB47BC, #8E24AA); /* Градиент для второй карточки */
+}
+
+.offer-card-3 {
+    background: linear-gradient(to right, #9575CD, #6A5ACD); /* Градиент для третьей карточки */
+}
+
+.offer-card-4 {
+    background: linear-gradient(to right, #B39DDB, #8E24AA); /* Градиент для четвертой карточки */
+}
+
+.offer-card-5 {
+    background: linear-gradient(to right, #7B1FA2, #4A148C); /* Градиент для пятой карточки */
+}
+
+.offer-card-6 {
+    background: linear-gradient(to right, #AB47BC, #8E24AA); /* Градиент для шестой карточки */
+}
+
+.offer-card-7 {
+    background: linear-gradient(to right, #8E24AA, #6A5ACD); /* Градиент для седьмой карточки */
+}
+
+.offer-card:hover {
+    opacity: 0.9; /* Эффект при наведении */
+}
+
+.feedback-slider {
+    position: relative;
+    text-align: center;
+}
+
+.feedback-item {
+    display: none;
+}
+
+.feedback-item.active {
+    display: block; /* Показать активный отзыв */
+}
+
+.feedback-card {
+    background: white; /* Цвет фона карточки отзыва */
+    color: #333; /* Цвет текста карточки отзыва */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Стили для секции директора */
+.director {
+    background: #6A5ACD; /* Фиолетовый фон секции */
+    color: white; /* Цвет текста */
+    padding: 20px; /* Отступы */
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Тень для секции */
+}
+
+.director-content {
+    display: flex; /* Используем flexbox для расположения изображения и текста */
+    align-items: center; /* Вертикальное выравнивание */
+    justify-content: center; /* Центрирование по горизонтали */
+    flex-wrap: wrap; /* Позволяет элементам обтекать */
+}
+
+.director-photo {
+    border-radius: 50%; /* Округлая форма изображения */
+    width: 150px; /* Ширина изображения */
+    height: 150px; /* Высота изображения */
+    margin-right: 20px; /* Отступ справа от изображения */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Тень для изображения */
+    border: 5px solid white; /* Белая рамка вокруг изображения */
+}
+
+.director-text {
+    max-width: 600px; /* Максимальная ширина текстового блока */
+    background: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для текста */
+    color: #333; /* Цвет текста внутри блока */
+    padding: 15px; /* Отступы внутри текстового блока */
+    border-radius: 10px; /* Скругление углов текстового блока */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для текстового блока */
+}
+
+/* Стили для кнопок */
+button {
+    background-color: #6A5ACD; /* Фиолетовый цвет для кнопок листания отзывов */
+    color: white; /* Цвет текста кнопок */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Плавные переходы */
+}
+
+button:hover {
+    background-color: #5E4A9E; /* Темный фиолетовый при наведении */
+}
+
+/* Стили для кнопок социальных сетей */
+.social-buttons {
+    text-align: center; /* Центрирование кнопок социальных сетей */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.social-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    color: white; /* Цвет текста кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    background-color: #6A5ACD; /* Фиолетовый фон для кнопок социальных сетей */
+    transition: transform 0.3s;
+}
+
+/* Уникальные цвета для кнопок социальных сетей с брендовыми цветами */
+.social-button.gmail {
+    background-color: #D32F2F; /* Красный цвет для Gmail */
+}
+
+.social-button.viber {
+    background-color: #6B1B8A; /* Фиолетовый цвет для Viber */
+}
+
+.social-button.instagram {
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AD); /* Градиент для Instagram */
+}
+
+.social-button:hover {
+    transform: scale(1.1); /* Эффект увеличения при наведении */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #6A5ACD; /* Фиолетовый цвет подвала */
+    color: white;
+}
